@@ -49,10 +49,5 @@ const flatten = function(arr) {
 };
 
 // Tests
-let y = [1, 2, [3, 4], 5, [6]];
-flatten(y);
-assertArraysEqual(y, [1, 2, 3, 4, 5, 6]);
-
-let z = [[10, 20], [30, 40, 50], [60]];
-flatten(z);
-assertArraysEqual(z, [10, 20, 30, 40, 50, 60]);
+assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
+assertArraysEqual(flatten([[10, 20], [30, 40, 50], 60]), [10, 20, 30, 40, 50]);
