@@ -1,5 +1,5 @@
 // Function to compare two arrays and determine if they are a perfect match.
-const eqArrays = function(array1, array2) {
+const eqArrays = function (array1, array2) {
   // Check if the arrays have different lengths
   if (array1.length !== array2.length) {
     return false;
@@ -22,15 +22,15 @@ const eqArrays = function(array1, array2) {
 };
 
 // FUNCTION IMPLEMENTATION FOR assertArraysEqual
-const assertArraysEqual = function(actual, expected) {
-  if (eqArrays(actual,expected)) {
+const assertArraysEqual = function (actual, expected) {
+  if (eqArrays(actual, expected)) {
     console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
   } else {
     console.log(`🔴 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 
-const without = function(source, itemsToRemove) {
+const without = function (source, itemsToRemove) {
   // Iterate over the elements of the source array
   for (let i = 0; i < source.length; i++) {
     for (let j = 0; j < itemsToRemove.length; j++) { // Iterate over the elements of the itemsToRemove array
@@ -40,9 +40,10 @@ const without = function(source, itemsToRemove) {
       }
     }
   }
-  // Return the modified source array
+  // Return the modified source array, which now contains only the elements not present in the itemsToRemove array
   return source;
 };
+
 
 let x = [1, 2, 3];
 without(x, [1]); // => [2, 3]
@@ -56,3 +57,5 @@ const words = ["hello", "world", "lighthouse"];
 without(words, ["lighthouse"]); // no need to capture return value for this test case
 // Make sure the original array was not altered by the without function
 assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+assertArraysEqual(without([1, 2, 3], [1]), [2, 3]);
+assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]);
