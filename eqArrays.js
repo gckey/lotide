@@ -1,11 +1,7 @@
-// FUNCTION IMPLEMENTATION
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🔴 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+/* FUNCTION IMPLEMENTATION eqArrays.js   */
+
+const assertEqual = require('./assertEqual');
+
 // Function to compare two arrays and determine if they are a perfect match.
 const eqArrays = function(array1, array2) {
   // Check if the arrays have different lengths
@@ -29,10 +25,4 @@ const eqArrays = function(array1, array2) {
   return true;
 };
 
-// Tests
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
-assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), false);
-eqArrays(["1", "2", "3"], ["1", "2", "3"]); // => true
-// eqArrays(["1", "2", "3"], ["1", "2", 3]) // => false
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), false);
-assertEqual(eqArrays(["Lighthouse Labs", "Bootcamp"], ["Lighthouse Labs", "Bootcamp"]), true);   //=> true
+module.exports = eqArrays;
