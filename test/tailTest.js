@@ -1,14 +1,12 @@
-// test/tailTest.js
 
-const assertEqual = require('../assertEqual');
-const tail = require('../tail');
+// Refractor tailTest with Mocha and Chai
 
+const assert = require('chai').assert;
+const tail   = require('../tail');
 
-let testArr1 = [];
-let testArr2 = [9];
-let testArr3 = [101,102,103];
+describe("#tail", () => {
+  it("returns ['Lighthouse', 'Labs'] for ['Hello', 'Lighthouse', 'Labs']", () => {
+    assert.deepEqual(tail(["Hello", "Lighthouse", "Labs"]), ["Lighthouse", "Labs"]);
+  });
 
-//Test code
-assertEqual(tail(testArr1).length, 0);
-assertEqual(tail(testArr2).length, 0);
-assertEqual(tail(testArr3).length, 2);
+});
