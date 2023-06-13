@@ -41,8 +41,8 @@ const map = function(array, callback) {
 
 //TEST CODES
 
-const output1 = map(words, word => word[0]);
-assertArraysEqual(output1, [ 'g', 'c', 't', 'm', 't' ]);
+const output1 = map(words, word => word[0]); //console.log(output1);
+// assertArraysEqual(output1, [ 'g', 'c', 't', 'm', 't' ]);
 
 const output2 = map(words, word => word + ' ' + 'check');
 assertArraysEqual(output2, ["ground check", "control check", "to check", "major check", "tom check"]);

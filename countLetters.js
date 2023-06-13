@@ -26,7 +26,6 @@ const countLetters = function(sentence) {
 // Test Code
 
 /* Printout the result of countLetters */
-// console.log(countLetters("lhl web dev program"));
 
 assertEqual(countLetters('lighthouse in the house')["u"], 2);
 assertEqual(countLetters('web dev flex program')["b"], 1);

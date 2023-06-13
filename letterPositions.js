@@ -51,5 +51,4 @@ const letterPositions = function(sentence) {
   return results;
 };
 
-// console.log(letterPositions("lhl web dev program"));
 assertArraysEqual(letterPositions("hello").e, [1]);
