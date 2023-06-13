@@ -2,7 +2,7 @@
 
 const eqArrays = require('./eqArrays');
 
-// FUNCTION IMPLEMENTATION FOR assertArraysEqual
+/* FUNCTION IMPLEMENTATION FOR assertArraysEqual */
 const assertArraysEqual = function(actual, expected) {
   if (eqArrays(actual,expected)) {
     console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
