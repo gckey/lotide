@@ -43,3 +43,4 @@ The following functions are currently implemented:
 * `map`: A function that takes in an array and a callback function. It applies the callback function to each element of the array and returns a new array with the modified elements.
 * `takeUntil`: A function that takes in an array and a callback function. It keeps collecting elements from the array until the callback function returns a truthy value. It returns a new array with the collected elements.
 * `without`: A function that takes in two arrays: the source array and an array of items to remove. It returns a new array with all the items from the source array except the ones specified for removal.
+* Test 
