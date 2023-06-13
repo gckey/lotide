@@ -1,9 +1,10 @@
 const assertEqual = require('./assertEqual');
 const eqArrays = require('./eqArrays');
-
-// Function that take in 2 obj and returns T or F
-// Returns T if both objects have identical keys with identical values.
-// Otherwise you get back a big fat false!
+/*
+Function that take in 2 obj and returns T or F
+Returns T if both objects have identical keys with identical values.
+Otherwise you get back a big fat false!
+*/
 
 const eqObjects = function(object1, object2) {
   // Retrieve the keys of object1 and object2
@@ -37,7 +38,7 @@ const eqObjects = function(object1, object2) {
 
 module.exports = eqObjects;
 
-//////////////////////////// TEST CODE
+//TEST CODE
 
 const shirtObject = { color: "red", size: "medium" };
 const anotherShirtObject = { size: "medium", color: "red" };
