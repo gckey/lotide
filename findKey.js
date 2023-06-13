@@ -1,6 +1,8 @@
 const assertEqual = require('./assertEqual');
 
-/** Function that scans an object and returns the first key for which the callback returns a truthy value **/
+/*
+Function that scans an object and returns the first key for which the callback returns a truthy value 
+ */
 const findKey = function(object, callback) {
   // Get a list of all the keys in an object
   const keys = Object.keys(object);
