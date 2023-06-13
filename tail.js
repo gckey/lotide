@@ -1,6 +1,6 @@
 // FUNCTION IMPLEMENTATION tail.js
 
-const assertEqual = require('./assertEqual');
+// const assertEqual = require('./assertEqual');
 
 let newArr;
 const tail = function(arr) {

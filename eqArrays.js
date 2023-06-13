@@ -1,7 +1,5 @@
 /* FUNCTION IMPLEMENTATION eqArrays.js   */
 
-const assertEqual = require('./assertEqual');
-
 // Function to compare two arrays and determine if they are a perfect match.
 const eqArrays = function(array1, array2) {
   // Check if the arrays have different lengths
