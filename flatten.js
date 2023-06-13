@@ -1,5 +1,5 @@
 const assertArraysEqual = require('./assertArraysEqual');
-
+// Function Implementation
 const flatten = function(arr) {
   /* Initialize an empty array that will be returned with all the elements.*/
   const flattenedArray = [];
