@@ -1,6 +1,6 @@
 const assertArraysEqual = require('./assertArraysEqual');
 
-/**Function that keep collecting items from a provided array until the callback provided returns a truthy value **/
+/*Function that keep collecting items from a provided array until the callback provided returns a truthy value */
 const takeUntil = function(array, callback) {
   //Create an empty array to store the result
   const results = [];
