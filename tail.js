@@ -1,7 +1,5 @@
 // FUNCTION IMPLEMENTATION tail.js
 
-// const assertEqual = require('./assertEqual');
-
 let newArr;
 const tail = function(arr) {
   if (arr.length >= 1) {
