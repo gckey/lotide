@@ -1,6 +1,6 @@
 
 const assertArraysEqual = require('./assertArraysEqual');
-// Function Implementation
+/* Function Implementation */
 const without = function(source, itemsToRemove) {
   // Iterate over the elements of the source array
   for (let i = 0; i < source.length; i++) {
