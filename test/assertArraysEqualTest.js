@@ -4,6 +4,6 @@
 const eqArrays = require('../eqArrays');
 const assertArraysEqual = require('../assertArraysEqual');
 
-//TEST codes
+/* TEST codes */
 assertArraysEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
 assertArraysEqual(eqArrays([1],[1]), true);
