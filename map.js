@@ -11,7 +11,7 @@ const map = function(array, callback) {
   return results;
 };
 
-//TEST CODES
+/* TEST CODES */
 
 // const output1 = map(words, word => word[0]); //console.log(output1);
 // assertArraysEqual(output1, [ 'g', 'c', 't', 'm', 't' ]);
