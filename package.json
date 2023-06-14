@@ -1,8 +1,8 @@
 {
   "name": "@gckey/lotide",
-  "version": "2.0.0",
-  "description": "The following functions are implemented in JS: head, tail, middle, assertArraysEqual, assertEqual, assertObjectsEqual, countLetters, countOnly, eqArrays, eqObjects, findKey, findKeyByValue, flatten, letterPositions, map, takeUntil, and without",
-  "main": "assertArraysEqual.js",
+  "version": "2.0.2",
+  "description": "LHL Lotide Project",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
