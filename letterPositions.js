@@ -1,6 +1,6 @@
 const assertArraysEqual = require('./assertArraysEqual');
 
-// Function Implementation
+/* Function Implementation */
 const letterPositions = function(sentence) {
   const results = {};
   // logic to update results here
