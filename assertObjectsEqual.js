@@ -11,9 +11,3 @@ const assertObjectsEqual = function(actual, expected) {
   }
 };
 module.exports = assertObjectsEqual;
-
-// Tests
-// assertObjectsEqual({a: "1", b: "2"}, {b: "2", a: "1"});
-
-assertObjectsEqual(eqObjects({a: "1", b: "2"}, {b: "2", a: "1"}), true);
-assertObjectsEqual(eqObjects({a: "1", b: "2"}, { c: "1", d: ["2", 3, 4] }), false);
