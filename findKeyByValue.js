@@ -1,5 +1,4 @@
-const assertEqual = require('./assertEqual');
-// Function Implementation
+/* Function Implementation */
 const findKeyByValue = function(object, value) {
   // Get a list of all the keys in an object
   const keys = Object.keys(object);
@@ -10,16 +9,7 @@ const findKeyByValue = function(object, value) {
       return key;
     }
   }
-  // Return undefined if no key with the given value is found
   return undefined;
 };
 
-// Test code
-const bestTVShowsByGenre = {
-  sciFi: "The Expanse",
-  comedy: "Brooklyn Nine-Nine",
-  drama:  "The Wire"
-};
-
-assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
-assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+module.exports = findKeyByValue;
