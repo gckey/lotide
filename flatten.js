@@ -1,5 +1,3 @@
-const assertArraysEqual = require('./assertArraysEqual');
-// Function Implementation
 const flatten = function(arr) {
   /* Initialize an empty array that will be returned with all the elements.*/
   const flattenedArray = [];
@@ -18,6 +16,4 @@ const flatten = function(arr) {
   return flattenedArray;
 };
 
-// Tests
-assertArraysEqual(flatten([1, 2, [3, 4], 5, [6]]), [1, 2, 3, 4, 5, 6]);
-assertArraysEqual(flatten([[10, 20], [30, 40, 50], 60]), [10, 20, 30, 40, 50]);
+module.exports = flatten;
