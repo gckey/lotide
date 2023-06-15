@@ -1,6 +1,6 @@
 {
   "name": "@gckey/lotide",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "LHL Lotide Project",
   "main": "index.js",
   "directories": {
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/gckey/lotide.git"
   },
-  "author": "abdu",
+  "author": "gckey",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/gckey/lotide/issues"
